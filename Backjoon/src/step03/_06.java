@@ -1,9 +1,23 @@
 package step03;
 
+import java.util.Scanner;
+
 public class _06 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Scanner in = new Scanner(System.in);
+		
+		int a = in.nextInt();
+		
+		for(int i = 1; i <= a; i++) {
+			int c = in.nextInt();
+			int d = in.nextInt();
+			
+			System.out.println("Case #" + i + ": " + (c + d));
+		}
+		
+		in.close();
 
 	}
 
