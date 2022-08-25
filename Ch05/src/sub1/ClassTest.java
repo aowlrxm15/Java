@@ -53,16 +53,7 @@ public class ClassTest {
 		kb.withdraw(7000);
 		kb.show(); 
 		
-		Account wr = new Account();
 		
-		wr.bank = "우리은행";
-		wr.id = "101-13-1002";
-		wr.name = "장보고";
-		wr.balance = 10000;
-		
-		wr.deposit(50000);
-		wr.withdraw(20000);
-		wr.show(); 
 		
 		
 
