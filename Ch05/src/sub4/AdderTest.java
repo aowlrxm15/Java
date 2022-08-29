@@ -3,7 +3,7 @@ package sub4;
  * 날짜 : 2022/08/29
  * 이름 : 전인준
  * 내용 : 싱글톤 객체와 인스턴스 객체 실습 
- * 
+ * 그림 그려서 보는게 편함
  */
 class Adder {
 	private static Adder instance = new Adder();

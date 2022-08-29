@@ -6,7 +6,10 @@ public class Car {
 	private String name;
 	private String color;
 	private int speed;
-	public static int count;
+	public static int count; 
+	//클래스 변수(정적 변수), 클래스 메서드(정적 메서드)는 
+	//static을 선언한 클래스의 멤버를 말하며,
+	//Data 영역에 생성되기 때문에 객체 생성 없이 클래스로 참조 가능하다
 	
 	// 생성자
 	public Car(String name, String color, int speed) {
