@@ -91,10 +91,84 @@
     주요기능은 객체비교를위한 equals(),객체정보 출력을위한 toString()제공
 
     -StringTest : 문자열 클래스 String 실습
-    -WrapperTest
-    -MathTest
-    -DateTest
-    -RegularExpressTest
+    -WrapperTest : Wrapper 클래스 실습
+    
+    int var1 = 1;
+    Integer box1 = new Integer(var1);
+
+    -MathTest : MathClass 실습
+    -DateTest : 날짜 클래스 실습
+    -RegularExpressTest : 정규표현식 클래스 실습
+    // 정규표현식
+    String patt = "b[a-z]*";
 
 ## 9장 제네릭과 컬렉션 프레임워크
+    -GenericTest : 제네릭 실습
+    클래스 내부의 속성타입을 동적으로 일반화 시키는 문법
+
+    -StackTest   : 자료구조 Stack 실습
+
+    -ListTest    : 자료구조 List 실습
+    배열과 유사하지만 동적으로 생성되는 선형 자료구조
+    (List를 구현한 ArrayList를 가장 많이 사용)
+
+    -SetTest     : 자료구조 Set 실습
+    중복된 데이터 제거 or 존재여부확인에 사용 (입력된 순서를 고려x , 중복허용 x)
+
+    -MapTest     : 자료구조 Map 실습
+    key - value 쌍으로 이루어진 구조
+    Map을 구현한 HastMap을 많이사용(key를 이용해서 List보다 빠른탐색 수행)
+
 ## 10장 입출력 스트림
+    -FilelIOTest    : 파일 입출력 스트림 실습
+    String path = "C:\\Users\\java2\\Desktop\\Sample1.txt";
+		String target = "C:\\Users\\java2\\Desktop\\Sample2.txt";
+		
+		try {
+			FileInputStream fis = new FileInputStream(path);
+			FileOutputStream fos = new FileOutputStream(target);
+			
+			while(true) {
+				
+				// 파일 읽기
+				int data = fis.read();
+				
+				if(data == -1) {
+					break; // 파일을 모두 읽었을 경우
+				}
+				
+				// 데이터 출력
+				char c = (char) data;
+				System.out.print(c);
+				
+				// 파일 쓰기
+				fos.write(data);
+			}
+			
+			// 스트림 해제
+			fis.close();
+			fos.close();
+			
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+    -BufferOTest    : 버퍼 입출력 스트림 실습
+    BufferedInputStream bis = new BufferedInputStream("");
+	BufferedOutputStream bos = new BufferedOutputStream("");
+			
+    -SerializeTest  : 직렬화 실습
+    자바 객체를 스트림을 통해 외부 파일로 생성하는 작업
+    스트림으로 전송될 객체는 Serializable 인터페이스 구현
+
+    -PropertiesTest : 프로퍼티 실습
+    문자열 데이터만취급 key-value 자료구조
+    프로그램의 환경설정 값을 저장할때 사용
+
+## JDBC 프로그래밍
+    -JDBCTest : JDBC 실습
+
+
