@@ -171,4 +171,14 @@
 ## JDBC 프로그래밍
     -JDBCTest : JDBC 실습
 
+    -(Delete,Update,Insert,Select)Test : (Delete,Update,Insert,Select)실습
+
+    -PrepatrdStatementTest : PrepatrdStatement실습
+
+    -TransactionTest : Transaction실습
+    .setAutoCommit(false)
+    .commit();
+    commit은 모든 작성의 성공처리, rollback은 모든 작업의 실패처리
+
+
 
