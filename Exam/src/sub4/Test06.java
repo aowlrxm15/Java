@@ -2,10 +2,6 @@ package sub4;
 /*
  * 날짜 : 2022-09-16
  * 이름 : 전인준
- * 
- * instanceof
- * a b g
- 
  */
 class Apple {
 	private String country;

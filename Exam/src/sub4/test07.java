@@ -4,13 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-//list<integer>
-//size
-//get(i);
-//total
-//integer
-//integer
-//scoreslist.add();
 
 
 public class test07 {

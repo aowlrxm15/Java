@@ -1,10 +1,4 @@
 package sub4;
-//Set<Integer>
-//(int) Math.ceil(Math.random() * 45);
-//.add(num);
-//
-//
-//
 
 import java.util.HashSet;
 import java.util.Set;
