@@ -1,0 +1,39 @@
+package sub4;
+//Set<Integer>
+//(int) Math.ceil(Math.random() * 45);
+//.add(num);
+//
+//
+//
+
+import java.util.HashSet;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class test08 {
+	public static void main(String[] args) {
+
+		for(int count=1; count <=5; count++) {
+			System.out.println(makeLotto());
+		}
+	}
+	
+	public static Set<Integer> makeLotto() {
+		
+		Set<Integer> lottoSet = new HashSet<>();
+		
+		for(;;) {
+			int num = (int) Math.ceil(Math.random() * 45);
+			
+			lottoSet.add(num);
+			
+			if(lottoSet.size() == 6) {
+				break;
+			}
+		}
+		
+		Set<Integer> treeSet = new TreeSet<>(lottoSet);
+		
+		return treeSet;
+	}
+}
