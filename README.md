@@ -168,7 +168,7 @@
     문자열 데이터만취급 key-value 자료구조
     프로그램의 환경설정 값을 저장할때 사용
 
-## JDBC 프로그래밍
+## 11장 JDBC 프로그래밍
     -JDBCTest : JDBC 실습
 
     -(Delete,Update,Insert,Select)Test : (Delete,Update,Insert,Select)실습
@@ -179,6 +179,19 @@
     .setAutoCommit(false)
     .commit();
     commit은 모든 작성의 성공처리, rollback은 모든 작업의 실패처리
+
+## 12장 스레드
+    -ThreadTest : Thread 실습
+
+    -ThreadjoinTest : Threadjoin 실습
+    (synchronized)
+
+    -ThreadAddTest : Thread활용 실습
+
+    -DaemonThreadTest : DaemonThread 실습
+    메인스레드를 보조하는 보조스레드
+    메인종료되면 보조도 같이종료
+
 
 
 
