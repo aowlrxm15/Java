@@ -7,6 +7,9 @@ import java.net.Socket;
  * 이름 : 전인준
  * 내용 : 채팅 프로그램 실습하기
  * 
+ *  실행방법
+ *  java -cp MyChatting.jar sub3.ChatServer
+ * 
  */
 public class ChatClient {
 	public static void main(String[] args) {
